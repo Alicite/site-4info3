@@ -32,6 +32,7 @@ const entrar = async (evento) => {
         loginSection.appendChild(feedback);
         
         localStorage.setItem("token", login.token)
+        localStorage.setItem("admin", login.admin)
         setTimeout(() => {
             location.href = '/Alunos/alunos.html'
         }, 500)

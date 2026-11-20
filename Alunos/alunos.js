@@ -1,3 +1,5 @@
+import { criarNav } from "../BarraNav/barraNav.js";
+
 const fetchAlunos = async (token) => {
     let todosOsAlunos = await fetch('http://localhost:3000/alunos', {
         method: 'GET',
@@ -36,4 +38,5 @@ const renderAlunos = async () => {
     });
 }
 
+criarNav('alunos')
 renderAlunos();
